@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="??" width="??" height"??" alt="Логотип Седоны">
+          <img src="#" width="#" height"#" alt="Логотип Седоны">
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
@@ -19,9 +19,11 @@
       </nav>
     </header>
     <main class="container">
-      
-      <!-- тут должна быть секция с фоном гор, и должен быть img, где будут картинкой написаны нестандратные шрифты -->
-      
+      <section class="title">
+        <style>
+          body {background: #}
+        </style>
+        <img src="#" width="#" height="#" alt= "Welcome to the gorgeous Sedona">
       <h1 class="visually-hidden">Седона</h1>
       <section class="description">
         <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -31,61 +33,59 @@
         <ul class="features-list">
           <li class="feature-item">
             <h3>Настоящий городок</h3>
-            <!-- #1 и текст должны быть в разных тегах без br. В остальных li по аналогии так же-->
-            <p>№1<br>
-              Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            <p>№1</p>
+            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </li>
-          
-          <!-- тут должен быть твой блок recommendations, но сразу списком. Т.е. li.feature-item, а в нем уже ul.recommendations-list -->
-          
+          <li class="feature-item">
+            <h3 class="visually-hidden">Рекомендации</h3>
+              <ul class="recommendations-list">
+                <li class="recommendations-item">
+                  <h3>Жилье</h3>
+                  <p>Рекомендуем пожить в настоящем мотеле, как в кино!</p>
+                </li>
+                <li class="recommendations-item">
+                  <h3>Еда</h3>
+                  <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </li>
+                <li class="recommendations-item">
+                  <h3>Сувениры</h3>
+                  <p>Не только китайского, но и местного производства!</p>
+                </li>
+              </ul>
+          </li>
           <li class="feature-item">
             <h3>Там есть мост дьявола</h3>
-            <p>№2<br>
-              Да! По нему можно пройти, если конечно вы осмелитесь</p>
+            <p>№2</p>
+            <p>Да! По нему можно пройти, если конечно вы осмелитесь</p>
           </li>
           <li class="feature-item">
             <h3>Небольшая площадь</h3>
-            <p>№2<br>
-              Все достопримечальности находятся очень близко</p>
+            <p>№2</p>
+            <p>Все достопримечальности находятся очень близко</p>
           </li>
           <li class="feature-item">
             <h3>Красивая дорога</h3>
-            <p>№4<br>
-              Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p>№4</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="feature-item">
             <h3>Мало туристов</h3>
-            <p>№5<br>
-              Большинство едет в гранд каньон и толпится там</p>
+            <p>№5</p>
+            <p>Большинство едет в гранд каньон и толпится там</p>
           </li>
       </section>
-      <section class="recommendations">
-        <h2 class="visually-hidden">Рекомендации</h2>
-        <ul class="recommendations-list">
-          <li class="recommendations-item">
-            <h3>Жилье</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, как в кино!</p>
-          </li>
-          <li class="recommendations-item">
-            <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="recommendations-item">
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
-          </li>
       <section class="search-hotel">
         <h2 class="visually-hidden">Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <!-- вот ты пишешь класс Button и тег спан при этом? Вместо span напиши тег Button -->
-          <span class="button search-hotel-button">Поиск гостиницы в Седоне</span>
-        
-          <!-- тут должен быть section.map -->
+            <button class="button search-hotel-button">Поиск гостиницы в Седоне</button>
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">карта гостиниц</h2>
+          <!-- здесь будет форма-->
+      </section>
     </main>
     <footer class="main-footer">
-      <p class="footer-hashtags">
-        <!-- без а, хештег просто текстом -->
-        <a href="??">#visitsedona</a></p>
+      <p class="footer-hashtags">#visitsedona</p>
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="??">Twitter</a></li>
