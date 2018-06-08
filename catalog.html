@@ -28,14 +28,14 @@
         <p class="search-rezult">Найдено:3</p>
         <h2>Сортировка:</h2>
         <ul class="sorting-list">
-          <!-- а я не писал, что тут внутри Li должно быть a, а в нем уже текст? -->
-          <li class="sorting-item">по цене</li>
-          <li class="sorting-item">по типу</li>
-          <li class="sorting-item">по рейтингу</li>
+          <!-- а я не писал, что тут внутри Li должно быть a, а в нем уже текст? - нет) -->
+          <li class="sorting-item"><a href="#">по цене</a></li>
+          <li class="sorting-item"><a href="#">по типу</a></li>
+          <li class="sorting-item"><a href="#">по рейтингу</a></li>
         </ul>
-        <!-- Это кнопки не назад и вперед, а кнопки сортировки по возростанию\убыванию. Дай им общего родителя какого-то -->
-        <a href="#" class="search-button">Назад</a>
-        <a href="#" class="search-button">Вперед</a>
+        <div class="search-button">
+        <a href="#" class="search-button-increase">Возрастание</a>
+        <a href="#" class="search-button-ebbing">Убывание</a>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Перечень гостиниц</h2>
@@ -55,6 +55,23 @@
               <p class="price">от 4000р.</p>
               <a class="button" href="??">забронировать</a>
             </section>
+            <div class="rating">
+              <ul class="rating-list">
+                <li class="rating-item">
+                  <img src="star.png" alt="star">
+                <li>
+                <li class="rating-item">
+                  <img src="star.png" alt="star">
+                <li>
+                <li class="rating-item">
+                  <img src="star.png" alt="star">
+                <li>
+                <li class="rating-item">
+                  <img src="star.png" alt="star">
+                <li>
+              </ul>
+              <span class="rating-text">Рейтинг:8,5</span>
+            <div>
           </li>
           <li class="catalog-item">
             <h3>
@@ -71,6 +88,20 @@
               <p class="price">от 3000р.</p>
               <a class="button" href="??">забронировать</a>
             </section>
+            <div class="rating">
+              <ul class="rating-list">
+                <li class="rating-item">
+                  <img src="star.png" alt="star">
+                <li>
+                <li class="rating-item">
+                  <img src="star.png" alt="star">
+                <li>
+                <li class="rating-item">
+                  <img src="star.png" alt="star">
+                <li>
+              </ul>
+              <span class="rating-text">Рейтинг:8,9</span>
+            <div>
           </li>
           <li class="catalog-item">
             <h3>
@@ -87,38 +118,19 @@
               <p class="price">от 2000р.</p>
               <a class="button" href="??">забронировать</a>
             </section>
+            <div class="rating">
+              <ul class="rating-list">
+                <li class="rating-item">
+                  <img src="star.png" alt="star">
+                <li>
+                <li class="rating-item">
+                  <img src="star.png" alt="star">
+                <li>
+              </ul>
+              <span class="rating-text">Рейтинг:9,2</span>
+            <div>
           </li>
         </ul>
-        <!-- div.rating Должен быть у кадого элемнта li перечня гостиниц, посмотри по макету
-            и должно быть так Для гостинницы, у которой рейтинг 3
-            div.rating
-              ul.rating-list
-                li.rating-item
-                  img.src=star.png
-                li.rating-item
-                  img.src=star.png
-                li.rating-item
-                  img.src=star.png
-              /ul
-              <span class="rating-text">Рейтинг:9,2</span>
-            /div
-            
-            у которой рейтинг 4, к примеру, будет на 1 Li Больше
-        -->
-        <div class="rating">
-          <ul>
-            <li>
-              <img src="#" alt="4 stars">
-              <span class="rating-text">Рейтинг:8,5</span>
-            </li>
-            <li>
-              <img src="#" alt="3 stars">
-              <span class="rating-text">Рейтинг:8,9</span>
-            </li>
-            <li>
-              <img src="#" alt="2 stars">
-              <span class="rating-text">Рейтинг:9,2</span>
-            </li>
       </section>
     </main>
     <footer class="main-footer">
