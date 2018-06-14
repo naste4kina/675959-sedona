@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/logo.png" width="138" height"70" alt="Логотип Седоны">
+          <img src="img/logo.png" width="138" height="70" alt="Логотип Седоны">
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
@@ -21,21 +21,64 @@
     <main class="container">
       <h1 class="page-title">Гостиницы</h1>
       <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!--здесь будет форма -->
-        <a href="??">показать</a>
+        <h2 class="visually-hidden">Фильтр жилья</h2>
+        <form class="filter" method="get" action="#">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input" type="checkbox" name="swimmingpool" id="filter-swimmingpool" checked>
+                <label for="filter-swimmingpool">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input" type="checkbox" name="parking" id="filter-parking">
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input" type="checkbox" name="wifi" id="filter-wifi">
+                <label for="filter-wifi">WI-FI</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
+                <label for="filter-hotel">Гостиница</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input" type="checkbox" name="motel" id="filter-motel" checked>
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input" type="checkbox" name="apartments" id="filter-apartments" checked>
+                <label for="filter-apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <p class="filter-cost-title">от 0</p>
+            <p class="filter-cost-title">до 3000</p>
+          <!--  вот этот инпут все равно с одним кружком получается-->
+            <input class="visually-hidden filter-cost" type="range" min="0" max="3000" multiple value="0,4000">
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
+      </section>
       <section class="sorting">
         <p class="search-rezult">Найдено:3</p>
         <h2>Сортировка:</h2>
         <ul class="sorting-list">
-          <!-- а я не писал, что тут внутри Li должно быть a, а в нем уже текст? - нет) -->
           <li class="sorting-item"><a href="#">по цене</a></li>
           <li class="sorting-item"><a href="#">по типу</a></li>
           <li class="sorting-item"><a href="#">по рейтингу</a></li>
         </ul>
         <div class="search-button">
-        <a href="#" class="search-button-increase">Возрастание</a>
-        <a href="#" class="search-button-ebbing">Убывание</a>
+        <button class="button search-button-increase">Возрастание</button>
+        <button class="button search-button-ebbing">Убывание</button>
+        </div>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Перечень гостиниц</h2>
@@ -71,7 +114,7 @@
                 <li>
               </ul>
               <span class="rating-text">Рейтинг:8,5</span>
-            <div>
+            </div>
           </li>
           <li class="catalog-item">
             <h3>
@@ -101,7 +144,7 @@
                 <li>
               </ul>
               <span class="rating-text">Рейтинг:8,9</span>
-            <div>
+            </div>
           </li>
           <li class="catalog-item">
             <h3>
@@ -128,7 +171,7 @@
                 <li>
               </ul>
               <span class="rating-text">Рейтинг:9,2</span>
-            <div>
+            </div>
           </li>
         </ul>
       </section>
