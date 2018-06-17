@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -28,20 +31,23 @@
       <h1 class="visually-hidden">Седона</h1>
     </section>
       <section class="description">
-        <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="text-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
       </section>
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features-list">
-          <li class="feature-item">
-            <h3>Настоящий городок</h3>
-            <p>№1</p>
-            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-            <img src="img/small-town.jpg" width="800" height="401" alt= "small town">
-          </li>
-          <li class="feature-item">
-            <h3 class="visually-hidden">Рекомендации</h3>
+          <div class="feature-item-long">
+            <li class="feature-item">
+              <h3>Настоящий городок</h3>
+              <p>№1</p>
+              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+              <img src="img/small-town.jpg" width="800" height="401" alt= "small town">
+            </li>
+          </div>
+          <div class="feature-item-recom">
+            <li class="feature-item">
+              <h3 class="visually-hidden">Рекомендации</h3>
               <ul class="recommendations-list">
                 <li class="recommendations-item">
                   <h3>Жилье</h3>
@@ -56,28 +62,33 @@
                   <p>Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
-          </li>
-          <li class="feature-item">
-            <h3>Там есть мост дьявола</h3>
-            <p>№2</p>
-            <p>Да! По нему можно пройти, если конечно вы осмелитесь</p>
-            <img src="img/canyon.jpg" width="800" height="400" alt= "canyon">
-          </li>
-          <li class="feature-item">
-            <h3>Небольшая площадь</h3>
-            <p>№2</p>
-            <p>Все достопримечальности находятся очень близко</p>
-          </li>
-          <li class="feature-item">
-            <h3>Красивая дорога</h3>
-            <p>№4</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="feature-item">
-            <h3>Мало туристов</h3>
-            <p>№5</p>
-            <p>Большинство едет в гранд каньон и толпится там</p>
-          </li>
+            </li>
+          </div>
+          <div class="feature-item-long">
+            <li class="feature-item">
+              <h3>Там есть мост дьявола</h3>
+              <p>№2</p>
+              <p>Да! По нему можно пройти, если конечно вы осмелитесь</p>
+              <img src="img/canyon.jpg" width="800" height="400" alt= "canyon">
+            </li>
+          </div>
+          <div class="feature-item-short">
+            <li class="feature-item">
+              <h3>Небольшая площадь</h3>
+              <p>№2</p>
+              <p>Все достопримечальности находятся очень близко</p>
+            </li>
+            <li class="feature-item">
+              <h3>Красивая дорога</h3>
+              <p>№4</p>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="feature-item">
+              <h3>Мало туристов</h3>
+              <p>№5</p>
+              <p>Большинство едет в гранд каньон и толпится там</p>
+            </li>
+          </div>
         </ul>
       </section>
       <section class="search-hotel">
@@ -87,7 +98,8 @@
       </section>
     </main>
     <footer class="main-footer">
-      <p class="footer-hashtags">#visitsedona</p>
+      <p class="footer-hashtags">
+        <a href="??">#visitsedona</a></p>
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="??">Twitter</a></li>
@@ -105,11 +117,11 @@
       <form class="search-form" method="post">
         <p class="search-item">
           <label for="search-start-date">Дата заезда</label>
-          <input id="search-start-date" type="text" name="start-date" placeholder="01 января 2018">
+          <input id="search-start-date" type="text" name="start-date" placeholder="24 апреля 2017">
         </p>
         <p class="search-item">
           <label for="search-finish-date">Дата выезда</label>
-          <input id="search-finish-date" type="text" name="finish-date" placeholder="01 января 2018">
+          <input id="search-finish-date" type="text" name="finish-date" placeholder="4 июля 2017">
         </p>
         <p class="search-item">
           <label for="search-adults">Взрослые</label>
@@ -119,7 +131,7 @@
           <label for="search-children">Дети</label>
           <input id="search-children" type="number" name="children" placeholder="1">
         </p>
-        <button class="button" type="submit">Найти</button>
+        <button class="button search-button" type="submit">Найти</button>
       </form>
       <img src="img/map.jpg" width="1280" height="747" alt= "map">
     </section>

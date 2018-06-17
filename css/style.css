@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #fefefe;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+  font-weight: 700;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2
+}
+.site-navigation a:active {
+  color: #b2b2b2
+}
+
+.text-title {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item h3 {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.feature-item-long {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.feature-item-short {
+  background-color: #eeeeee;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #766357;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #604e43;
+}
+
+.button:active {
+  background-color: #503e33;
+  color: #857871;
+}
+
+.main-footer {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul{
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+}
+
+.footer-copyright {
+  text-align: center;
+  color: #000000;
+}
+
+.footer-hashtags a {
+  color: #000000;
+}
+
+.footer-hashtags {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.search-button {
+  color: #ffffff;
+  background-color: #81b3d2;
+  font-weight: 700;
+}
+
+.search-button:hover,
+.search-button:focus {
+  background-color: #669ec0;
+}
+
+.search-button:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+.modal {
+  color: #000000;
+}
+
+.search-item {
+  font-weight: 700;
+}
+
+.search-hotel h2 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.search-hotel p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.search-hotel-button {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.modal p {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.search-form input[type="text"],
+.search-form input[type="number"] {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+}
+
+.search-form input:hover {
+  background-color: #ebebeb;
+  border: #ebebeb;
+}
+
+.search-form input:focus {
+  background-color: #ffffff;
+}
+
+legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+label {
+  line-height: 21px;
+}
+
+.search-rezult {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sorting h2 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting-list {
+  list-style: none;
+}
+
+.sorting-list a {
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+  color: #cacaca;
+}
+
+.sorting-list a:focus,
+.sorting-list a:hover {
+  color: #81b3d2;
+}
+
+.sorting-list a:active {
+  color: #000000;
+}
+
+.info-button{
+  color: #ffffff;
+  background-color: #81b3d2;
+  font-weight: 700;
+}
+
+.info-button:hover,
+.info-button:focus {
+  background-color: #669ec0;
+}
+
+.info-button:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list h3 a {
+  color: #000000;
+}
