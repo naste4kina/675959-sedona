@@ -23,6 +23,7 @@ a {
 .site-navigation a {
   color: #000000;
   font-weight: 700;
+
 }
 
 .site-navigation a:hover,
@@ -36,6 +37,12 @@ a {
 .text-title {
   font-size: 21px;
   font-weight: 700;
+}
+
+.text-title-main {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
 }
 
 .features-list {
@@ -235,4 +242,279 @@ label {
 
 .catalog-list h3 a {
   color: #000000;
+}
+
+/* временное */
+
+html,
+body {
+  width: 1200px;
+  min-height: 2762px;
+}
+
+body {
+
+  background-color: #ffffff;
+}
+
+.main-header-logo {
+  width: 138px;
+  height:70px;
+  position: absolute;
+  left: 531px;
+}
+
+.main-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-navigation {
+  width: 1056px;
+  margin: 0;
+  padding: 0;
+  padding-left: 73px;
+  padding-right: 73px;
+  display: flex;
+  min-height: 56px;
+  justify-content: space-between;
+}
+.site-navigation li:nth-child(1) {
+margin-right: auto;
+}
+
+.site-navigation li:nth-child(2) {
+margin-right: auto;
+}
+
+.site-navigation li:nth-child(3) {
+margin-left: auto;
+}
+
+.site-navigation li:nth-child(4) {
+margin-left: auto;
+}
+
+.title {
+  width: 100%;
+  background-image: url("../img/background-main.jpg");
+  background-size: 1200px auto;
+  background-repeat: no-repeat;
+  background-color: #e4f1f9;
+  margin: 0;
+  padding: 0;
+  min-height: 255px;
+}
+
+.title img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+/* временное */
+  min-height: 508px;
+}
+
+.description {
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  max-width: 576px;
+  text-align: center;
+}
+
+
+.features-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-height: 1098px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.features-list li:nth-child(1) {
+  width: 100%;
+  min-height: 255px;
+}
+
+.features-list li:nth-child(1) img {
+  float:right;
+}
+
+.recommendations-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  max-height: 330px;
+}
+
+.recommendations-item {
+  width: 400px;
+  text-align: center;
+}
+
+.features-list li:nth-child(3) {
+  width: 100%;
+  min-height: 255px;
+}
+
+.feature-item-short {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 255px;
+}
+
+.features-list li:nth-child(4) {
+  width: 400px;
+}
+
+.features-list li:nth-child(5) {
+  width: 400px;
+}
+
+.features-list li:nth-child(6) {
+  width: 400px;
+}
+
+.search-hotel {
+  text-align: center;
+  width: 575px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer-hashtags {
+  margin: 0;
+  width: 400px;
+}
+
+.footer-social {
+  margin: 0;
+  width: 400px;
+}
+
+.footer-copyright {
+  margin: 0;
+  width: 400px;
+}
+
+
+/* вторая страница */
+
+.filter {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 217px;
+  width: 1056px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.facility {
+  width: 240px;
+}
+
+.filter-type {
+  width: 288px
+}
+
+.filter-search {
+  width: 328px;
+  margin-left: 200px;
+}
+
+.sorting {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 1056px;
+  min-height: 86px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.search-filters {
+  width: 528px;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sorting-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 288px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1056px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.catalog-item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  241
+}
+
+.rating {
+  width: 241px;
+  text-align: right;
+}
+
+.hotel-description {
+  width: 528px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }

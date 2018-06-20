@@ -7,7 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="search-hotel-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
@@ -22,11 +22,11 @@
       </nav>
     </header>
     <main class="container">
-      <h1 class="page-title">Гостиницы</h1>
+      <h1 class="visually-hidden">Гостиницы</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр жилья</h2>
         <form class="filter" method="get" action="#">
-          <fieldset>
+          <fieldset class:"facility">
             <legend>Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
@@ -43,7 +43,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-type">
             <legend>Тип жилья:</legend>
             <ul>
               <li class="filter-option">
@@ -60,17 +60,20 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Стоимость в сутки (Р):</legend>
-            <p class="filter-cost-title">от 0</p>
-            <p class="filter-cost-title">до 3000</p>
+          <div class="filter-search">
+            <fieldset class="filter-cost">
+              <legend>Стоимость в сутки (Р):</legend>
+              <p class="filter-cost-title">от 0</p>
+              <p class="filter-cost-title">до 3000</p>
           <!--  вот этот инпут все равно с одним кружком получается-->
-            <input class="visually-hidden filter-cost" type="range" min="0" max="3000" multiple value="0,4000">
-          </fieldset>
+              <input class="visually-hidden filter-cost" type="range" min="0" max="3000" multiple value="0,4000">
+            </fieldset>
           <button type="submit" class="filter-button button">Показать</button>
+        </div>
         </form>
       </section>
       <section class="sorting">
+        <div class="search-filters">
         <p class="search-rezult">Найдено:3</p>
         <h2>Сортировка:</h2>
         <ul class="sorting-list">
@@ -78,6 +81,7 @@
           <li class="sorting-item"><a href="#">по типу</a></li>
           <li class="sorting-item"><a href="#">по рейтингу</a></li>
         </ul>
+        </div>
         <div class="search-button">
         <button class="button search-button-increase">Возрастание</button>
         <button class="button search-button-ebbing">Убывание</button>
@@ -87,6 +91,7 @@
         <h2 class="visually-hidden">Перечень гостиниц</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
+            <div class="hotel-description">
             <h3>
               <a href="catalog-item.html">Amara resort & spa</a>
             </h3>
@@ -101,25 +106,27 @@
               <p class="price">от 4000р.</p>
               <a class="button" href="#">забронировать</a>
             </section>
+            </div>
             <div class="rating">
               <ul class="rating-list">
                 <li class="rating-item">
                   <img src="star.png" alt="star">
-                <li>
+                </li>
                 <li class="rating-item">
                   <img src="star.png" alt="star">
-                <li>
+                </li>
                 <li class="rating-item">
                   <img src="star.png" alt="star">
-                <li>
+                </li>
                 <li class="rating-item">
                   <img src="star.png" alt="star">
-                <li>
+                </li>
               </ul>
               <span class="rating-text">Рейтинг:8,5</span>
             </div>
           </li>
           <li class="catalog-item">
+            <div class="hotel-description">
             <h3>
               <a href="catalog-item.html">Desert Qual Inn</a>
             </h3>
@@ -134,22 +141,24 @@
               <p class="price">от 3000р.</p>
               <a class="button" href="??">забронировать</a>
             </section>
+            </div>
             <div class="rating">
               <ul class="rating-list">
                 <li class="rating-item">
                   <img src="star.png" alt="star">
-                <li>
+                </li>
                 <li class="rating-item">
                   <img src="star.png" alt="star">
-                <li>
+                </li>
                 <li class="rating-item">
                   <img src="star.png" alt="star">
-                <li>
+                </li>
               </ul>
               <span class="rating-text">Рейтинг:8,9</span>
             </div>
           </li>
           <li class="catalog-item">
+            <div class="hotel-description">
             <h3>
               <a href="catalog-item.html">Villas at poco diablo</a>
             </h3>
@@ -164,14 +173,15 @@
               <p class="price">от 2000р.</p>
               <a class="button" href="??">забронировать</a>
             </section>
+            </div>
             <div class="rating">
               <ul class="rating-list">
                 <li class="rating-item">
                   <img src="star.png" alt="star">
-                <li>
+                </li>
                 <li class="rating-item">
                   <img src="star.png" alt="star">
-                <li>
+                </li>
               </ul>
               <span class="rating-text">Рейтинг:9,2</span>
             </div>
