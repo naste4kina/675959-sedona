@@ -8,6 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+     <!-- у нас весь контент страницы центрируется и имеет фикс ширину. Нужно весь контент обвернуть в div.container и отцентровать его -->
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -23,7 +24,9 @@
     </header>
     <main class="container">
       <section class="title">
+        <!-- не отображается на страницу -->
         <img src="img/title.svg" width="458" height="352" alt= "Welcome to the gorgeous Sedona">
+        <!-- внизу есть белая штука :) Ее нужно вставить через псевдоэлемент и позиционирование -->
       <h1 class="visually-hidden">Седона</h1>
     </section>
       <section class="description">
@@ -33,11 +36,13 @@
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features-list">
+          <!-- ВНУТРИ UL на первой уровне только LI могут быть !!! -->
           <div class="feature-item-long">
             <li class="feature-item">
               <h3>Настоящий городок</h3>
               <p>№1</p>
               <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+              <!-- а что с картинкой почему их нет ?-->
               <!-- <img src="img/small-town.jpg" width="800" height="255" alt= "small town"> -->
             </li>
           </div>
