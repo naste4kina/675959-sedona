@@ -8,49 +8,47 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-     <!-- у нас весь контент страницы центрируется и имеет фикс ширину. Нужно весь контент обвернуть в div.container и отцентровать его -->
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo.png" width="138" height="70" alt="logo sedona">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="fotos.html">Фото и видео</a></li>
-          <li><a href="state-map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="container">
-      <section class="title">
-        <!-- не отображается на страницу -->
-        <img src="img/title.svg" width="458" height="352" alt= "Welcome to the gorgeous Sedona">
-        <!-- внизу есть белая штука :) Ее нужно вставить через псевдоэлемент и позиционирование -->
-      <h1 class="visually-hidden">Седона</h1>
-    </section>
-      <section class="description">
-        <p class="text-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p class="text-title-main">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
-      </section>
-      <section class="features">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <ul class="features-list">
-          <!-- ВНУТРИ UL на первой уровне только LI могут быть !!! -->
-          <div class="feature-item-long">
+    <div class="container">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <a class="main-header-logo">
+            <img src="img/logo.png" width="138" height="70" alt="logo sedona">
+          </a>
+          <ul class="site-navigation">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="fotos.html">Фото и видео</a></li>
+            <li><a href="state-map.html">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="container">
+        <section class="title">
+          <img src="img/title.png" width="458" height="352" alt= "Welcome to the gorgeous Sedona"/>
+        <h1 class="visually-hidden">Седона</h1>
+        </section>
+        <section class="description">
+          <p class="text-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="text-title-main">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+        </section>
+        <section class="features">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <ul class="features-list">
             <li class="feature-item">
-              <h3>Настоящий городок</h3>
-              <p>№1</p>
-              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-              <!-- а что с картинкой почему их нет ?-->
-              <!-- <img src="img/small-town.jpg" width="800" height="255" alt= "small town"> -->
+              <div class="column-text1">
+                <h3>Настоящий городок</h3>
+                <p>№1</p>
+                <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+              </div>
+              <figure class="column-img1">
+                <img src="img/small-town.jpg" width="800" height="400" alt= "small town">
+              </figure>
             </li>
-          </div>
             <li class="feature-item">
               <h3 class="visually-hidden">Рекомендации</h3>
               <ul class="recommendations-list">
                 <li class="recommendations-item">
-                  <h3>Жилье</h3>
+                  <h3>Жильё</h3>
                   <p>Рекомендуем пожить в настоящем мотеле, как в кино!</p>
                 </li>
                 <li class="recommendations-item">
@@ -63,77 +61,82 @@
                 </li>
               </ul>
             </li>
-          <div class="feature-item-long">
             <li class="feature-item">
-              <h3>Там есть мост дьявола</h3>
-              <p>№2</p>
-              <p>Да! По нему можно пройти, если конечно вы осмелитесь</p>
-              <!-- <img src="img/canyon.jpg" width="800" height="400" alt= "canyon"> -->
+              <figure class="column-img2">
+                <img src="img/canyon.jpg" width="800" height="400" alt= "canyon">
+              </figure>
+              <div class="column-text2">
+                <h3>Там есть мост дьявола</h3>
+                <p>№2</p>
+                <p>Да! По нему можно пройти, если конечно вы осмелитесь</p>
+              </div>
             </li>
-          </div>
-          <div class="feature-item-short">
-            <li class="feature-item">
-              <h3>Небольшая площадь</h3>
-              <p>№3</p>
-              <p>Все достопримечальности находятся очень близко</p>
-            </li>
-            <li class="feature-item">
-              <h3>Красивая дорога</h3>
-              <p>№4</p>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-            <li class="feature-item">
-              <h3>Мало туристов</h3>
-              <p>№5</p>
-              <p>Большинство едет в гранд каньон и толпится там</p>
-            </li>
-          </div>
-        </ul>
-      </section>
-      <section class="search-hotel">
-        <h2 class="visually-hidden">Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="button search-hotel-button">Поиск гостиницы в Седоне</button>
-      </section>
-      <img src="img/map.png" width="1280" height="747" alt= "map">
-    </main>
-    <footer class="main-footer">
-      <p class="footer-hashtags">
-        <a href="??">#visitsedona</a></p>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="??">Twitter</a></li>
-          <li><a class="social-button" href="??">Facebook</a></li>
-          <li><a class="social-button" href="??">Youtube</a></li>
-        </ul>
-      </div>
-      <p class="footer-copyright">
-        <b>Website by</b>
-        <a class="button-copyright" href="https://htmlacademy.ru">HTML Academy</a>
-      </p>
-    </footer>
-    <!-- <section class="modal modal-search-hotel">
-      <h2>Поиск гостиницы</h2>
-      <form class="search-form" method="post">
-        <p class="search-item">
-          <label for="search-start-date">Дата заезда</label>
-          <input id="search-start-date" type="text" name="start-date" placeholder="24 апреля 2017">
-        </p>
-        <p class="search-item">
-          <label for="search-finish-date">Дата выезда</label>
-          <input id="search-finish-date" type="text" name="finish-date" placeholder="4 июля 2017">
-        </p>
-        <p class="search-item">
-          <label for="search-adults">Взрослые</label>
-          <input id="search-adults" type="number" name="adults" placeholder="2">
-        </p>
-        <p class="search-item">
-          <label for="search-children">Дети</label>
-          <input id="search-children" type="number" name="children" placeholder="1">
-        </p>
-        <button class="button search-button" type="submit">Найти</button>
-      </form>
 
-    </section> -->
+            <li class="feature-item">
+              <ul class="last-features">
+                <li class="last-feature-item">
+                  <h3>Небольшая площадь</h3>
+                  <p>№3</p>
+                  <p>Все достопримечальности находятся очень близко</p>
+                </li>
+                <li class="last-feature-item">
+                  <h3>Красивая дорога</h3>
+                  <p>№4</p>
+                  <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                </li>
+                <li class="last-feature-item">
+                  <h3>Мало туристов</h3>
+                  <p>№5</p>
+                  <p>Большинство едет в гранд каньон и толпится там</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="search-hotel">
+          <h2 class="search-hotel-text">Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="button search-hotel-button">Поиск гостиницы в Седоне</button>
+        </section>
+      </main>
+      <footer class="main-footer">
+        <p class="footer-hashtags">
+          <a href="??">#visitsedona</a></p>
+        <div class="footer-social">
+          <ul>
+            <li><a class="social-button" href="??">Twitter</a></li>
+            <li><a class="social-button" href="??">Facebook</a></li>
+            <li><a class="social-button" href="??">Youtube</a></li>
+          </ul>
+        </div>
+        <p class="footer-copyright">
+          <b>Website by</b>
+          <a class="button-copyright" href="https://htmlacademy.ru">HTML Academy</a>
+        </p>
+      </footer>
+      <!-- <section class="modal modal-search-hotel">
+        <h2>Поиск гостиницы</h2>
+        <form class="search-form" method="post">
+          <p class="search-item">
+            <label for="search-start-date">Дата заезда</label>
+            <input id="search-start-date" type="text" name="start-date" placeholder="24 апреля 2017">
+          </p>
+          <p class="search-item">
+            <label for="search-finish-date">Дата выезда</label>
+            <input id="search-finish-date" type="text" name="finish-date" placeholder="4 июля 2017">
+          </p>
+          <p class="search-item">
+            <label for="search-adults">Взрослые</label>
+            <input id="search-adults" type="number" name="adults" placeholder="2">
+          </p>
+          <p class="search-item">
+            <label for="search-children">Дети</label>
+            <input id="search-children" type="number" name="children" placeholder="1">
+          </p>
+          <button class="button search-button" type="submit">Найти</button>
+        </form>
+
+      </section> -->
+  </div>
   </body>
 </html>
