@@ -6,7 +6,7 @@ body {
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
-
+  position: relative;
   background-color: #fefefe;
 }
 
@@ -250,12 +250,6 @@ label {
 
 
 
-
-
-
-
-
-
 .container {
   width: 1200px;
   margin-left: auto;
@@ -478,7 +472,6 @@ label {
 .footer-hashtags {
   background-color: rgb(255,255,255,0.9);
   z-index: 5;
-  max-height: 120px;
 }
 
 .footer-social {
@@ -519,9 +512,14 @@ label {
   display: flex;
   justify-content: space-between;
   text-align: center;
+
+  z-index: 5;
+  background: transparent;
+}
+
+.footer-absol {
   position: absolute;
   bottom: 0;
-  z-index: 5;
 }
 
 .map {
