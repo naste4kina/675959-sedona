@@ -512,7 +512,7 @@ label {
   display: flex;
   justify-content: space-between;
   text-align: center;
-
+  /* А зачем z-index то?))) */
   z-index: 5;
   background: transparent;
 }
