@@ -260,8 +260,6 @@ label {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  /* background-image: url("../img/sedona-index.jpg");
-  background-repeat: no-repeat; */
   background-color: #ffffff;
 }
 
@@ -316,7 +314,7 @@ label {
   background-size: 1200px;
   background-repeat: no-repeat;
   background-color: #e4f1f9;
-  background-size: cover; */
+  background-size: cover;
   margin: 0;
   padding: 0;
   position: relative;
@@ -477,15 +475,6 @@ label {
   padding-right: 75px;
 }
 
-.main-footer {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  padding-top: 470px;
-
-
-}
-
 .footer-hashtags {
   background-color: rgb(255,255,255,0.9);
   z-index: 5;
@@ -530,15 +519,17 @@ label {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  background: transparent;
-  position: relative;
-  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
 }
 
 .map {
-  position: absolute;
   z-index: 0;
-  top: -170px;
+  padding-top: 593px;
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 
