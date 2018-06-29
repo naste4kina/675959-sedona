@@ -398,11 +398,58 @@ label {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+
+.recommendations-list>li:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75px;
+  height: 72px;
+  top: 56px;
+  margin-left: -37px;
+
+  background-image: url(../img/icon-hotels.svg);
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.recommendations-list>li:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 74px;
+  height: 70px;
+  top: 56px;
+  margin-left: -37px;
+
+  background-image: url(../img/icon-food.svg);
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.recommendations-list>li:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 64px;
+  height: 76px;
+  top: 56px;
+  margin-left: -32px;
+
+  background-image: url(../img/icon-suvenirs.svg);
+  background-repeat: no-repeat;
+  z-index: 2;
 }
 
 .recommendations-item {
-  width 33.3%
-
+  width 33.3%;
 }
 
 .recommendations-item h3 {
@@ -457,6 +504,7 @@ label {
 .last-feature-item {
   width: 33.3%;
   margin-bottom: 45px;
+
 }
 .last-feature-item h3 {
   margin-top: 48px;
@@ -468,6 +516,57 @@ label {
   padding-left: 75px;
   padding-right: 75px;
 }
+
+.white-line {
+position: relative;
+}
+
+.black-line {
+position: relative;
+}
+
+.white-line::before {
+  content: "";
+  width: 10px;
+  height: 2px;
+  top: 10px;
+  left: 170px;
+  position: absolute;
+  background: #ffffff;
+
+}
+
+
+.black-line::before {
+  content: "";
+  width: 10px;
+  height: 2px;
+  top: 10px;
+  left: 170px;
+  position: absolute;
+  background: #000000;
+
+}
+
+.white-line::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  top: 10px;
+  left:220px;
+  position: absolute;
+  background: #ffffff;
+}
+
+.black-line::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  top: 10px;
+  left:220px;
+  position: absolute;
+  background: #000000;
+  }
 
 .footer-hashtags {
   background-color: rgb(255,255,255,0.9);
@@ -512,9 +611,8 @@ label {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  /* А зачем z-index то?))) */
-  z-index: 5;
   background: transparent;
+  position: absolute;
 }
 
 .footer-absol {
@@ -533,19 +631,82 @@ label {
 
 .footer-hashtags {
   margin: 0;
+  padding: 0;
   width: 400px;
+  padding-top: 45px;
 }
 
 .footer-social {
   margin: 0;
+  padding: 0;
   width: 400px;
+  padding-top: 45px;
+}
+
+.footer-social ul {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  width: 150px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.social-button {
+  width: 48px;
+  height: 48px;
+  background-color: #81b3d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active path {
+  fill: #88b6d1;
 }
 
 .footer-copyright {
   margin: 0;
+  padding: 0;
   width: 400px;
+  padding-top: 45px;
 }
 
+.footer-copyright {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  padding-top: 45px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-copyright .button-copyright {
+  width: 120px;
+  height: 45px;
+  display: block;
+}
+
+.button-copyright:hover path,
+.button-copyright:focus path {
+  fill: #81b3d2;
+}
+
+.button-copyright:active path {
+  fill: #bdbbbc;
+}
+
+
+.footer-copyright b {
+  padding-right: 10px;
+}
 
 /* вторая страница */
 
@@ -603,12 +764,47 @@ label {
 }
 
 .search-rezult {
-  margin-right:50px;
+  margin-right: 50px;
+}
+
+.sort-button {
+  margin-top: 22px;
+}
+
+.sort-button a path {
+  fill: #b2b2b2;
+}
+
+.sort-button-increase:hover path,
+.sort-button-increase:focus path{
+  fill: #000000;
+}
+
+.sort-button-ebbing:hover path,
+.sort-button-ebbing:focus path {
+  fill: #000000;
+}
+
+.sort-button-increase:active path {
+  fill: #81b3d2;
+}
+
+.sort-button-ebbing:active path {
+  fill: #81b3d2;
 }
 
 .sorting-item {
   margin-left: 38px;
   margin-top: 22px;
+}
+
+.sorting-item:hover,
+.sorting-item:focus {
+  color: #81b3d2;
+}
+
+.sorting-item:active {
+  color: #000000;
 }
 
 .catalog {
@@ -629,8 +825,30 @@ label {
   margin: 0;
   padding: 0;
   display: flex;
-  padding-top: 25px;
+  padding-top: 10px;
   padding-bottom: 25px;
+}
+
+.hotel-page:hover,
+.hotel-page:focus {
+  color: #81b3d2;
+}
+.hotel-page:active {
+  color: #b2b2b2;
+}
+
+.catalog-item-type{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 8px;
+  margin-top: 4px;
+}
+
+.price {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 8px;
+  margin-top: 4px;
 }
 
 .item-info {
@@ -644,6 +862,7 @@ label {
   color: #000000;
   font-weight: 700;
   font-size: 21px;
+  padding-top: 10px;
 }
 
 .block-columns {
@@ -677,11 +896,13 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .rating-text {
   margin-left: auto;
   background-color: #f2f2f2;
+  margin-bottom: 25px;
 }
 
 .rating-list {
@@ -689,4 +910,205 @@ label {
   padding: 0;
   display: flex;
   list-style: none;
+  margin-left: auto;
+}
+
+.rating-item {
+  padding-left: 5px;
+}
+
+.facility {
+  border: none;
+
+}
+
+.filter-type {
+  border: none;
+}
+
+.filter-cost {
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 330px;
+
+}
+
+.price-control {
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  position: relative;
+}
+
+.price-control label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+  /* font-size: 0; */
+}
+
+.price-control::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+
+}
+
+.price-control .min-price,
+.price-control .max-price {
+  wodth: 90px;
+  padding-left:65px;
+}
+
+.price-control input {
+  width: 50px;
+  margin: 0;
+  padding-left: 3px;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-control {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-control .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-control .bar {
+  height: 2px;
+  width: 80%;
+  background: #ffffff;
+}
+
+.range-toggle {
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+  position: absolute;
+  top: -9px;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.filter-button {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  color: #000000;
+  background: #ffffff;
+}
+
+.filter-type {
+  color: #ffffff;
+}
+
+.facility {
+  color: #ffffff;
+}
+
+.facility-check {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.filter-type-check {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.facility-check li {
+  padding-top: 22px;
+}
+
+.filter-type-check li {
+  padding-top: 22px;
+}
+
+.filter-option {
+  display: block;
+  position: relative;
+}
+
+.filter-option::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  background position: 0 0;
+  cursor: pointer;
+}
+
+.facility-check>li:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+  background position: 0 0;
+  cursor: pointer;
+}
+
+.filter-type-check li::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+  background position: 0 0;
+  cursor: pointer;
+}
+
+.filter-option::before:disabled,
+.filter-option::before:disabled {
+  color: #6a6a6a;
+}
+
+.filter {
+  padding-top: 30px;
 }
