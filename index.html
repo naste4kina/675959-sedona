@@ -125,29 +125,31 @@
         </p>
 
       </footer>
-      <!-- <section class="modal modal-search-hotel">
-        <h2>Поиск гостиницы</h2>
+      <section class="modal modal-search-hotel">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
         <form class="search-form" method="post">
           <p class="search-item">
-            <label for="search-start-date">Дата заезда</label>
-            <input id="search-start-date" type="text" name="start-date" placeholder="24 апреля 2017">
+            <label for="search-start-date">Дата заезда:</label>
+            <input class="search-date" id="search-start-date" type="text" name="start-date" placeholder="24 апреля 2017">
           </p>
           <p class="search-item">
-            <label for="search-finish-date">Дата выезда</label>
-            <input id="search-finish-date" type="text" name="finish-date" placeholder="4 июля 2017">
+            <label for="search-finish-date">Дата выезда:</label>
+            <input class="search-date" id="search-finish-date" type="text" name="finish-date" placeholder="4 июля 2017">
           </p>
-          <p class="search-item">
-            <label for="search-adults">Взрослые</label>
-            <input id="search-adults" type="number" name="adults" placeholder="2">
-          </p>
-          <p class="search-item">
-            <label for="search-children">Дети</label>
-            <input id="search-children" type="number" name="children" placeholder="1">
-          </p>
+          <div class="number-per">
+            <p class="search-item-short">
+              <label for="search-adults">Взрослые:</label>
+              <input id="search-adults" type="number" name="adults" placeholder="2">
+            </p>
+            <p class="search-item-short">
+              <label for="search-children">Дети:</label>
+              <input id="search-children" type="number" name="children" placeholder="1">
+            </p>
+          </div>
           <button class="button search-button" type="submit">Найти</button>
         </form>
 
-      </section> -->
+      </section>
   </div>
   </body>
 </html>
