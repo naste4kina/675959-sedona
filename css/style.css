@@ -61,7 +61,9 @@ a {
   text-transform: uppercase;
   background-color: #766357;
   border: none;
+  outline: 0;
 }
+
 
 .button:hover,
 .button:focus {
@@ -242,7 +244,7 @@ label {
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
-  position: relative;
+  /* position: relative; */
 }
 
 .main-navigation {
@@ -357,10 +359,11 @@ label {
   width: 33.3%;
  color: #ffffff;
  margin-bottom: 60px;
+ margin-top: 48px;
 }
 
 .column-text1 h3 {
-  margin-top: 48px;
+  margin: 0;
   padding-left: 130px;
   padding-right: 130px;
 }
@@ -453,11 +456,12 @@ label {
  width: 33.3%;
  color: #ffffff;
  margin-bottom: 60px;
+ margin-top: 48px;
  margin-left: auto;
 }
 
 .column-text2 h3 {
-  margin-top: 48px;
+  margin: 0;
   padding-left: 120px;
   padding-right: 120px;
 }
@@ -485,10 +489,11 @@ label {
 .last-feature-item {
   width: 33.3%;
   margin-bottom: 45px;
+  margin-top: 48px;
 
 }
 .last-feature-item h3 {
-  margin-top: 48px;
+  margin: 0;
   padding-left: 130px;
   padding-right: 130px;
 }
@@ -693,6 +698,8 @@ position: relative;
 
 .sorting-type {
   display: flex;
+  align-items: center;
+  margin: 0;
 }
 
 .sorting {
@@ -703,17 +710,34 @@ position: relative;
   padding-left: 73px;
   padding-right: 73px;
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.sorting::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #a9a9a9;
+  bottom: 0;
+  left: 0;
 }
 
 .search-filters {
   margin: 0;
   padding: 0;
   display: flex;
-  /* padding-top: 30px; */
+}
+
+.search-rezult {
+  margin: 0;
+  margin-right: 55px;
 }
 
 .sorting-type h2 {
-  margin-top: 26px;
+  margin: 0;
 }
 
 .sorting-list {
@@ -721,14 +745,12 @@ position: relative;
   margin: 0;
   padding: 0;
   display: flex;
-}
-
-.search-rezult {
-  margin-right: 50px;
+  align-items: center;
 }
 
 .sort-button {
-  margin-top: 22px;
+  display: flex;
+  align-items: center;
 }
 
 .sort-button a path {
@@ -755,7 +777,6 @@ position: relative;
 
 .sorting-item {
   margin-left: 38px;
-  margin-top: 22px;
 }
 
 .sorting-item:hover,
@@ -774,6 +795,7 @@ position: relative;
   margin-right: 73px;
 }
 
+
 .catalog-list {
   margin: 0;
   padding: 0;
@@ -785,8 +807,19 @@ position: relative;
   margin: 0;
   padding: 0;
   display: flex;
-  padding-top: 10px;
+  padding-top: 25px;
   padding-bottom: 25px;
+  position: relative;
+}
+
+.catalog-item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #a9a9a9;
+  bottom: 0;
+  left: 0;
 }
 
 .catalog-item-image {
@@ -1031,7 +1064,15 @@ position: relative;
   position: relative;
 }
 
-.filter-option::before {
+.filter-option label {
+  cursor: pointer;
+}
+
+.filter-option input {
+  display: none;
+}
+
+.filter-option label::before {
   content: "";
   position: absolute;
   left: -40px;
@@ -1043,19 +1084,7 @@ position: relative;
   cursor: pointer;
 }
 
-.facility-check>li:nth-child(1)::before {
-  content: "";
-  position: absolute;
-  left: -40px;
-  width: 27px;
-  height: 23px;
-  background-image: url(../img/checkbox-on.svg);
-  background-repeat: no-repeat;
-  background position: 0 0;
-  cursor: pointer;
-}
-
-.filter-type-check li::before {
+.filter-option input:checked +label::before {
   content: "";
   position: absolute;
   left: -40px;
@@ -1081,17 +1110,12 @@ position: relative;
   background-color: #ffffff;
   position: absolute;
   padding: 55px;
-  width: 470px;
 }
 
 .modal-search-hotel {
   left: 50%;
-  top: 2320px;
+  top: 2292px;
   margin-left: -285px;
-}
-
-.modal input {
-  vertical-align: center;
 }
 
 .search-item-short input{
@@ -1129,11 +1153,11 @@ position: relative;
 }
 
 .search-item input {
-  width: 310px;
+  width: 345px;
   height: 40px;
 }
 
-.search-item-short input[type="number"] {
+.search-item-short input[type="text"] {
   padding: 0;
   margin: 0;
   display: flex;
@@ -1158,7 +1182,6 @@ position: relative;
 
 .number-per {
   display: flex;
-  width: 465px;
   justify-content: space-between;
   margin-bottom: 55px;
 }
@@ -1168,6 +1191,11 @@ position: relative;
   font-weight: 700;
   align-items: center;
   margin: 0;
+}
+
+::-webkit-input-placeholder {
+  color: #000000;
+  padding-left: 10px;
 }
 
 .number-per p:nth-child(2) label {
@@ -1187,7 +1215,7 @@ position: relative;
 
 
 .search-form label {
-  width: 120px;
+  width: 115px;
 }
 
 
@@ -1248,18 +1276,4 @@ position: relative;
   height: 3px;
   background-color: #a9a9a9;
   left: 13px;
-}
-
-.plus::before:hover,
-.plus::before:focus,
-.plus::after:hover,
-.plus::after:focus,
-.minus::after:hover,
-.minus::after:focus {
-  background-color: #000000;
-}
-
-.plus:hover,
-.plus:focus {
-  color: #000000;
 }
