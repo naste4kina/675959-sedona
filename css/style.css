@@ -2,12 +2,19 @@ body {
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
   position: relative;
   background-color: #fefefe;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  /* font-size: 100%;
+  font: inherit; */
 }
 
 a {
@@ -35,6 +42,8 @@ a {
 .text-title {
   font-size: 21px;
   font-weight: 700;
+  margin-bottom: 25px;
+  line-height: 26px;
 }
 
 .text-title-main {
@@ -49,7 +58,8 @@ a {
 
 .feature-item h3 {
   font-size: 21px;
-  line-height: 26px;
+  line-height: 22px;
+  margin-bottom: 20px;
 }
 
 
@@ -132,7 +142,7 @@ a {
   line-height: 36px;
 }
 
-.search-hotel p {
+.search-hotel>p {
   font-size: 14px;
   line-height: 24px;
 }
@@ -141,7 +151,10 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  /* width: 565px; */
+  height: 85px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .modal p {
@@ -244,7 +257,6 @@ label {
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
-  /* position: relative; */
 }
 
 .main-navigation {
@@ -274,17 +286,18 @@ label {
 }
 
 .site-navigation li {
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   width: 20%;
 }
 
 .site-navigation li:nth-child(2) {
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .site-navigation li:nth-child(3) {
   margin-left: auto;
+  padding-right: 35px;
   text-align: right;
 }
 
@@ -329,8 +342,8 @@ label {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 65px;
+  margin-bottom: 50px;
   max-width: 576px;
   text-align: center;
 }
@@ -358,7 +371,7 @@ label {
 .column-text1 {
   width: 33.3%;
  color: #ffffff;
- margin-bottom: 60px;
+ margin-bottom: 34px;
  margin-top: 48px;
 }
 
@@ -366,11 +379,13 @@ label {
   margin: 0;
   padding-left: 130px;
   padding-right: 130px;
+  margin-bottom: 22px;
 }
 
 .column-text1 p {
   padding-left: 50px;
   padding-right: 50px;
+  margin-bottom: 15px;
 }
 
 .column-img1 {
@@ -440,7 +455,7 @@ label {
 
 .recommendations-item {
   width 33.3%;
-  margin-top: 160px;
+  margin-top: 163px;
   margin-bottom: 80px;
   margin-left: 55px;
   margin-right: 55px;
@@ -455,8 +470,8 @@ label {
 .column-text2 {
  width: 33.3%;
  color: #ffffff;
- margin-bottom: 60px;
- margin-top: 48px;
+ margin-bottom: 38px;
+ margin-top: 49px;
  margin-left: auto;
 }
 
@@ -464,11 +479,13 @@ label {
   margin: 0;
   padding-left: 120px;
   padding-right: 120px;
+  margin-bottom: 20px;
 }
 
 .column-text2 p {
   padding-left: 50px;
   padding-right: 50px;
+  margin-bottom: 20px;
 }
 
 .column-img2 {
@@ -488,7 +505,7 @@ label {
 
 .last-feature-item {
   width: 33.3%;
-  margin-bottom: 45px;
+  margin-bottom: 39px;
   margin-top: 48px;
 
 }
@@ -496,11 +513,13 @@ label {
   margin: 0;
   padding-left: 130px;
   padding-right: 130px;
+  margin-bottom: 21px;
 }
 
 .last-feature-item p {
   padding-left: 75px;
   padding-right: 75px;
+  margin-bottom: 20px;
 }
 
 .white-line {
@@ -556,8 +575,6 @@ position: relative;
 
 .search-hotel {
   text-align: center;
-  display: flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
   margin-left: auto;
@@ -568,14 +585,11 @@ position: relative;
 
 .search-hotel h2 {
   margin-top: 50px;
+  margin-bottom: 22px;
 }
 
-.search-hotel p {
-  margin-bottom: 50px;
-}
-
-.search-hotel button {
-  height: 85px;
+.search-hotel>p {
+  margin-bottom: 48px;
 }
 
 .main-footer {
@@ -1105,21 +1119,44 @@ position: relative;
   padding-top: 30px;
 }
 
-.modal {
+.hole-form {
+  position: relative;
   color: #000000;
   background-color: #ffffff;
+}
+
+.search-form {
   position: absolute;
+  background-color: #ffffff;
   padding: 55px;
 }
 
-.modal-search-hotel {
-  left: 50%;
-  top: 2292px;
-  margin-left: -285px;
+.search-item {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 30px;
+  position: relative;
+  text-align: left;
 }
 
-.search-item-short input{
-  vertical-align: center;
+.number-per {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+
+.search-item-short {
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  margin: 0;
+}
+
+.search-item-short label {
+  text-align: left;
 }
 
 .search-form input[type="text"] {
@@ -1133,6 +1170,26 @@ position: relative;
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
 }
+
+.search-date {
+  fill: #a9a9a9;
+  width: 40px;
+  height: 40px;
+  display: block;
+  border: none;
+  background-color: inherit;
+  position: absolute;
+  right:0;
+}
+
+
+
+.search-item-short input{
+  vertical-align: center;
+}
+
+
+
 .search-form input:hover {
   background-color: #ebebeb;
   border: 2px solid #ebebeb;
@@ -1142,15 +1199,6 @@ position: relative;
   background-color: #ffffff;
 }
 
-.search-item {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 700;
-  align-items: center;
-  margin: 0;
-  margin-bottom: 30px;
-  position: relative;
-}
 
 .search-item input {
   width: 345px;
@@ -1180,19 +1228,6 @@ position: relative;
   height: 60px;
 }
 
-.number-per {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 55px;
-}
-
-.search-item-short {
-  display: flex;
-  font-weight: 700;
-  align-items: center;
-  margin: 0;
-}
-
 ::-webkit-input-placeholder {
   color: #000000;
   padding-left: 10px;
@@ -1202,20 +1237,11 @@ position: relative;
   text-align: center;
 }
 
-.search-date {
-  fill: #a9a9a9;
-  width: 40px;
-  height: 40px;
-  display: block;
-  border: none;
-  background-color: inherit;
-  position: absolute;
-  right:0;
-}
 
 
 .search-form label {
   width: 115px;
+  margin-right: 5px;
 }
 
 
