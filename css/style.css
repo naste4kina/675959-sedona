@@ -709,6 +709,7 @@ position: relative;
   margin: 0;
   padding: 0;
   display: flex;
+  /* padding-top: 30px; */
 }
 
 .sorting-type h2 {
@@ -788,6 +789,10 @@ position: relative;
   padding-bottom: 25px;
 }
 
+.catalog-item-image {
+  margin: 0;
+}
+
 .hotel-page:hover,
 .hotel-page:focus {
   color: #81b3d2;
@@ -799,14 +804,14 @@ position: relative;
 .catalog-item-type{
   padding: 0;
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   margin-top: 4px;
 }
 
 .price {
   padding: 0;
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   margin-top: 4px;
 }
 
@@ -821,7 +826,6 @@ position: relative;
   color: #000000;
   font-weight: 700;
   font-size: 21px;
-  padding-top: 10px;
 }
 
 .block-columns {
@@ -1121,6 +1125,7 @@ position: relative;
   align-items: center;
   margin: 0;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .search-item input {
@@ -1170,15 +1175,14 @@ position: relative;
 }
 
 .search-date {
-  background-image: url(../img/calendar.svg);
-  background-position: 317px center;
-  background-repeat: no-repeat;
   fill: #a9a9a9;
   width: 40px;
   height: 40px;
   display: block;
   border: none;
-  background-color: #f2f2f2;
+  background-color: inherit;
+  position: absolute;
+  right:0;
 }
 
 
