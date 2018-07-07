@@ -413,7 +413,8 @@ label {
   width: 75px;
   height: 72px;
   top: 60px;
-  margin-left: -39px;
+  left: 50%;
+  margin-left: -439px;
 
   background-image: url(../img/icon-hotels.svg);
   background-repeat: no-repeat;
@@ -426,6 +427,7 @@ label {
   width: 74px;
   height: 70px;
   top: 63px;
+  left: 50%;
   margin-left: -38px;
 
   background-image: url(../img/icon-food.svg);
@@ -439,7 +441,8 @@ label {
   width: 64px;
   height: 76px;
   top: 56px;
-  margin-left: -32px;
+  left: 50%;
+  margin-left: 367px;
 
   background-image: url(../img/icon-suvenirs.svg);
   background-repeat: no-repeat;
