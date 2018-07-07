@@ -13,8 +13,6 @@ body {
 p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
-  /* font-size: 100%;
-  font: inherit; */
 }
 
 a {
@@ -970,7 +968,6 @@ fieldset {
 .price-control label {
   display: inline-block;
   line-height: 30px;
-  vertical-align: center;
   cursor: pointer;
   font-size: 14px;
 }
@@ -996,6 +993,7 @@ fieldset {
 .price-control input {
   width: 50px;
   margin: 0;
+  padding: 0;
   padding-left: 3px;
   color: inherit;
   font: inherit;
