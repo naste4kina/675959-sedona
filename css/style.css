@@ -37,6 +37,7 @@ a {
   color: #b2b2b2
 }
 
+
 .text-title {
   font-size: 21px;
   font-weight: 700;
@@ -83,11 +84,6 @@ a {
   background-color: #503e33;
   color: #857871;
   outline: 0;
-}
-
-.main-footer {
-  color: #000000;
-  background-color: #ffffff;
 }
 
 .footer-social {
@@ -254,6 +250,7 @@ label {
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
+  box-shadow: 0 0 40px grey;
 }
 
 .main-navigation {
@@ -302,6 +299,11 @@ label {
   text-align: right;
 }
 
+.site-navigation-current {
+  color: #766357;
+  font-weight: 700;
+}
+
 .title {
   background-image: url("../img/background-main.jpg");
   background-size: 1200px;
@@ -331,8 +333,6 @@ label {
   padding-bottom: 77px;
 }
 
-
-
 .description {
   margin: 0;
   padding: 0;
@@ -344,7 +344,6 @@ label {
   max-width: 576px;
   text-align: center;
 }
-
 
 .features-list {
   margin: 0;
@@ -393,7 +392,6 @@ label {
   top: -30%;
 }
 
-
 .recommendations-list {
   list-style: none;
   margin: 0;
@@ -405,7 +403,6 @@ label {
   padding-top: 163px;
   padding-bottom: 80px;
 }
-
 
 .recommendations-list>li:nth-child(1)::before {
   content: "";
@@ -461,8 +458,6 @@ padding-right: 50px;
   display: flex;
   overflow: hidden;
 }
-
-
 
 .column-text2 {
  width: 33.3%;
@@ -541,9 +536,7 @@ position: relative;
   left: 174px;
   position: absolute;
   background: #ffffff;
-
 }
-
 
 .black-line::before {
   content: "";
@@ -553,7 +546,6 @@ position: relative;
   left: 174px;
   position: absolute;
   background: #000000;
-
 }
 
 .white-line::after {
@@ -599,9 +591,11 @@ position: relative;
   justify-content: space-between;
   align-items: center;
   background: transparent;
-  position: absolute;
+  /* position: absolute; */
   padding-top: 35px;
   padding-bottom: 35px;
+  color: #000000;
+  background-color: #ffffff;
   background: rgba(255,255,255,0.9);
 }
 
