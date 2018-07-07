@@ -410,8 +410,6 @@ label {
 .recommendations-list>li:nth-child(1)::before {
   content: "";
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
   width: 75px;
   height: 72px;
   top: 60px;
@@ -425,8 +423,6 @@ label {
 .recommendations-list>li:nth-child(2)::before {
   content: "";
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
   width: 74px;
   height: 70px;
   top: 63px;
@@ -440,8 +436,6 @@ label {
 .recommendations-list>li:nth-child(3)::before {
   content: "";
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
   width: 64px;
   height: 76px;
   top: 56px;
