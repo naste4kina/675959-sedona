@@ -972,6 +972,7 @@ fieldset {
   line-height: 30px;
   cursor: pointer;
   font-size: 14px;
+  vertical-align: middle;
 }
 
 .price-control::after {
