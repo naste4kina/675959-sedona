@@ -1124,7 +1124,7 @@ fieldset {
   height: 23px;
   background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
-  background position: 0 0;
+  background-position: 0 0;
   /* cursor: pointer; */
 }
 
