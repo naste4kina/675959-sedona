@@ -145,6 +145,8 @@ a {
   width: 100%;
   padding: 0;
   margin: 0;
+  z-index: 3;
+  position: relative;
 }
 
 .modal p {
@@ -184,6 +186,7 @@ label {
 
 .sorting-list {
   list-style: none;
+
 }
 
 .sorting-list a {
@@ -203,22 +206,6 @@ label {
 .sorting-list a:active {
   color: #000000;
   border-bottom: none;
-}
-
-.info-button{
-  color: #ffffff;
-  background-color: #81b3d2;
-  font-weight: 700;
-}
-
-.info-button:hover,
-.info-button:focus {
-  background-color: #669ec0;
-}
-
-.info-button:active {
-  color: #88b6d1;
-  background-color: #5496bd;
 }
 
 .catalog-list {
@@ -274,6 +261,7 @@ label {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   margin-left: 73px;
   margin-right: 73px;
@@ -356,6 +344,7 @@ label {
 .feature-item {
   position: relative;
   text-align: center;
+  z-index: 5;
 }
 
 .features-list>li:first-child {
@@ -499,9 +488,8 @@ padding-right: 50px;
 
 .last-feature-item {
   width: 33.3%;
-
-
 }
+
 .last-feature-item h3 {
   margin: 0;
   padding-left: 130px;
@@ -580,10 +568,14 @@ position: relative;
 .search-hotel h2 {
   margin-top: 52px;
   margin-bottom: 22px;
+  /* position: relative;
+  z-index: 4; */
 }
 
 .search-hotel>p {
   margin-bottom: 48px;
+  /* position: relative;
+  z-index: 4; */
 }
 
 .main-footer {
@@ -759,9 +751,27 @@ fieldset {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding-left: 40px;
 }
+
+.info-button{
+  color: #ffffff;
+  background-color: #81b3d2;
+  font-weight: 700;
+}
+
+.info-button:hover,
+.info-button:focus {
+  background-color: #669ec0;
+}
+
+.info-button:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
 
 .sort-button {
   display: flex;
@@ -1017,11 +1027,14 @@ fieldset {
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
   position: absolute;
-  top: -9px;
+  top: -10px;
 }
 
 .range-toggle:hover {
   background: #1c4f80;
+  border: 9px solid #ffffff;
+  border-radius: 50%;
+  background: #ababab;
 }
 
 .range-toggle-min {
@@ -1100,7 +1113,7 @@ fieldset {
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
   background position: 0 0;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .filter-option input:checked +label::before {
@@ -1112,29 +1125,28 @@ fieldset {
   background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
   background position: 0 0;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
-.filter-option::before:disabled,
 .filter-option::before:disabled {
   color: #6a6a6a;
 }
 
 @keyframes form {
   0% {
-    opacity: 0;
+    transform: translateY( -100%);
   }
   30% {
-    opacity: 0.3;
+    transform: translateY( -70%);
   }
   50% {
-    opacity: 0.5;
+    transform: translateY( -50%);
   }
   70% {
-    opacity: 0.7;
+    transform: translateY( -30%);
   }
   100% {
-    opacity: 1.0;
+    transform: translateY( 0%);
   }
 }
 
@@ -1171,6 +1183,7 @@ fieldset {
   background-color: #ffffff;
   padding: 55px;
   display: none;
+  z-index: 0;
 }
 
 .search-form-show {
