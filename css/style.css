@@ -520,7 +520,7 @@ position: relative;
   content: "";
   width: 10px;
   height: 2px;
-  top: 10px;
+  top: 7px;
   left: 174px;
   position: absolute;
   background: #ffffff;
@@ -530,7 +530,7 @@ position: relative;
   content: "";
   width: 10px;
   height: 2px;
-  top: 10px;
+  top: 7px;
   left: 174px;
   position: absolute;
   background: #000000;
@@ -540,7 +540,7 @@ position: relative;
   content: "";
   width: 10px;
   height: 2px;
-  top: 10px;
+  top: 7px;
   left:215px;
   position: absolute;
   background: #ffffff;
@@ -550,7 +550,7 @@ position: relative;
   content: "";
   width: 10px;
   height: 2px;
-  top: 10px;
+  top: 7px;
   left:216px;
   position: absolute;
   background: #000000;
@@ -1112,7 +1112,7 @@ fieldset {
   height: 23px;
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
-  background position: 0 0;
+  background-position: 0 0;
   /* cursor: pointer; */
 }
 
