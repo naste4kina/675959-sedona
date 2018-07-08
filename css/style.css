@@ -688,6 +688,7 @@ fieldset {
   display: flex;
   justify-content: flex-start;
   background-image: url(../img/filter-background.jpg);
+  background-color: #81b3d2;
   background-repeat: no-repeat;
   background-position-y: -55px;
 }
