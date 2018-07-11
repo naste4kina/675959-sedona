@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -24,8 +24,8 @@
       </header>
       <main class="main-part">
         <section class="title">
-          <img src="img/title.png" width="458" height="352" alt= "Welcome to the gorgeous Sedona"/>
-        <h1 class="visually-hidden">Седона</h1>
+          <img src="img/title.png" width="458" height="352" alt="Welcome to the gorgeous Sedona">
+          <h1 class="visually-hidden">Седона</h1>
         </section>
         <section class="description">
           <p class="text-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -41,7 +41,7 @@
                 <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <figure class="column-img1">
-                <img src="img/small-town.jpg" width="800" height="400" alt= "small town">
+                <img src="img/small-town.jpg" width="800" height="400" alt="small town">
               </figure>
             </li>
             <li class="feature-item">
@@ -63,7 +63,7 @@
             </li>
             <li class="feature-item">
               <figure class="column-img2">
-                <img src="img/canyon.jpg" width="800" height="400" alt= "canyon">
+                <img src="img/canyon.jpg" width="800" height="400" alt="canyon">
               </figure>
               <div class="column-text2">
                 <h3>Там есть<br>мост дьявола</h3>
@@ -71,7 +71,6 @@
                 <p>Да! По нему можно пройти, если конечно вы осмелитесь</p>
               </div>
             </li>
-
             <li class="feature-item">
               <ul class="last-features">
                 <li class="last-feature-item">
@@ -116,13 +115,13 @@
               </p>
               <div class="number-per">
                 <p class="search-item-short">
-                  <label for="search-adults">Взрослые:</label>
+                  <label class="adult-text" for="search-adults">Взрослые:</label>
                   <button class="minus">—<span class="visually-hidden">меньше</span></button>
                   <input id="search-adults" type="text" name="adults" placeholder="2">
                   <button class="plus">+<span class="visually-hidden">больше</span></button>
                </p>
-                <p class="search-item-short">
-                  <label for="search-children">Дети:</label>
+                <p class="search-item-short item-children">
+                  <label class="children-text" for="search-children">Дети:</label>
                   <button class="minus"><span class="visually-hidden">меньше</span>—</button>
                   <input id="search-children" type="text" name="children" placeholder="0">
                   <button class="plus"><span class="visually-hidden">больше</span>+</button>
@@ -137,7 +136,8 @@
       </main>
       <footer class="main-footer footer-absol">
         <p class="footer-hashtags">
-          <a href="??">#visitsedona</a></p>
+          <a href="#">#visitsedona</a>
+        </p>
         <div class="footer-social">
           <ul>
             <li><a class="social-button" href="#"><span class="visually-hidden">Twitter</span>
@@ -158,9 +158,7 @@
           </a>
         </p>
       </footer>
-  </div>
-
-<script src="js/script.min.js"></script>
-
+    </div>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

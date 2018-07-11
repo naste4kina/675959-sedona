@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона, каталог гостиниц</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="search-hotel-page">
     <div class="container">
@@ -76,8 +76,8 @@
                   <div class="range-toggle range-toggle-max"></div>
                 </div>
               </fieldset>
-            <button type="submit" class="filter-button button">Показать</button>
-          </div>
+              <button type="submit" class="filter-button button">Показать</button>
+            </div>
           </form>
         </section>
         <section class="sorting">
@@ -86,7 +86,7 @@
           <div class="sorting-type">
             <h2>Сортировка:</h2>
             <ul class="sorting-list">
-              <li class="sorting-item"><a href="#">по цене</a></li>
+              <li class="sorting-item active-item"><a href="#">по цене</a></li>
               <li class="sorting-item"><a href="#">по типу</a></li>
               <li class="sorting-item"><a href="#">по рейтингу</a></li>
             </ul>
@@ -106,7 +106,7 @@
           <ul class="catalog-list">
             <li class="catalog-item">
               <p class="catalog-item-image">
-                  <img src="img/amara-resort-spa.jpg" width="135" height="90" alt="Amara Resort & spa">
+                <img src="img/amara-resort-spa.jpg" width="135" height="90" alt="Amara Resort & spa">
               </p>
               <section class="item-info">
                 <a class="hotel-page" href="catalog-item.html">Amara resort & spa</a>
@@ -139,7 +139,6 @@
                 <span class="rating-text">Рейтинг: 8,5</span>
               </div>
             </li>
-
             <li class="catalog-item">
               <p class="catalog-item-image">
                 <img src="img/desert-qual-inn.jpg" width="135" height="90" alt="Desert Qual Inn">
@@ -172,7 +171,6 @@
                 <span class="rating-text">Рейтинг: 8,9</span>
               </div>
             </li>
-
             <li class="catalog-item">
               <p class="catalog-item-image">
                 <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas at poco diablo">
@@ -207,7 +205,8 @@
       </main>
       <footer class="main-footer">
         <p class="footer-hashtags">
-          <a href="??">#visitsedona</a></p>
+          <a href="#">#visitsedona</a>
+        </p>
         <div class="footer-social">
           <ul>
             <li><a class="social-button" href="#"><span class="visually-hidden">Twitter</span>
