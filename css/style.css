@@ -1417,13 +1417,13 @@ fieldset {
 
 .search-form-show {
   display: block;
-  -webkit-animation: form 1s;
-          animation: form 1s;
+  -webkit-animation: form 0.7s;
+          animation: form 0.7s;
 }
 
 .search-form-error {
-  -webkit-animation: error 1s;
-          animation: error 1s;
+  -webkit-animation: error 0.7s;
+          animation: error 0.7s;
 }
 
 .search-item {
