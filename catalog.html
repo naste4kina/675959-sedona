@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона, каталог гостиниц</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="search-hotel-page">
     <div class="container">
@@ -16,7 +16,7 @@
           </a>
           <ul class="site-navigation">
             <li><a href="info.html">Информация</a></li>
-            <li><a href="fotos.html">Фото и видео</a></li>
+            <li><a href="photos.html">Фото и видео</a></li>
             <li><a href="state-map.html">Карта штата</a></li>
             <li class="site-navigation-current">Гостиницы</li>
           </ul>
@@ -28,7 +28,7 @@
           <h2 class="visually-hidden">Фильтр жилья</h2>
           <form class="filter" method="get" action="#">
             <fieldset class="facility">
-              <legend>Инфраструктура:</legend>
+              <legend class="sorting-title">Инфраструктура:</legend>
               <ul class="facility-check">
                 <li class="filter-option">
                   <input class=" filter-input" type="checkbox" name="swimmingpool" id="filter-swimmingpool" checked>
@@ -45,7 +45,7 @@
               </ul>
             </fieldset>
             <fieldset class="filter-type">
-              <legend>Тип жилья:</legend>
+              <legend class="sorting-title">Тип жилья:</legend>
               <ul class="filter-type-check">
                 <li class="filter-option">
                   <input class="visually-hidden filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
@@ -63,7 +63,7 @@
             </fieldset>
             <div class="filter-search">
               <fieldset class="filter-cost">
-                <legend>Стоимость в сутки (Р):</legend>
+                <legend class="sorting-title">Стоимость в сутки (Р):</legend>
                 <div class="price-control">
                   <label class="min-price">от<input type="text" name="min-price" value="0"></label>
                   <label class="max-price">до<input type="text" name="max-price" value="3000"></label>
@@ -82,7 +82,7 @@
         </section>
         <section class="sorting">
           <div class="search-filters">
-          <p class="search-rezult">Найдено: 3</p>
+          <p class="search-result">Найдено: 3</p>
           <div class="sorting-type">
             <h2>Сортировка:</h2>
             <ul class="sorting-list">
@@ -96,7 +96,7 @@
             <a class="sort-button-increase"><span class="visually-hidden">Возрастание</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
             </a>
-            <a class="sort-button-ebbing"><span class="visually-hidden">Убывание</span>
+            <a class="sort-button-ebbing active-sorting"><span class="visually-hidden">Убывание</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
             </a>
           </div>

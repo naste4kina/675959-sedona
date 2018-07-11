@@ -149,17 +149,11 @@ a {
   background-color: #ffffff;
 }
 
-legend {
+.sorting-title {
   font-size: 16px;
-  line-height: 21px;
-  font-weight: 400;
 }
 
-label {
-  line-height: 21px;
-}
-
-.search-rezult {
+.search-result {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -410,7 +404,6 @@ label {
   top: 60px;
   left: 50%;
   margin-left: -439px;
-
   background-image: url(../img/icon-hotels.svg);
   background-repeat: no-repeat;
   z-index: 2;
@@ -424,7 +417,6 @@ label {
   top: 63px;
   left: 50%;
   margin-left: -38px;
-
   background-image: url(../img/icon-food.svg);
   background-repeat: no-repeat;
   z-index: 2;
@@ -438,7 +430,6 @@ label {
   top: 56px;
   left: 50%;
   margin-left: 367px;
-
   background-image: url(../img/icon-suvenirs.svg);
   background-repeat: no-repeat;
   z-index: 2;
@@ -452,7 +443,7 @@ label {
 }
 
 .recommendations-item p {
-    color: #333333;
+  color: #333333;
 }
 
 .features-list>li:nth-child(3) {
@@ -522,7 +513,7 @@ label {
   color: #333333;
 }
 
-.last-features li:nth-child(2) p {
+.center-item p {
   padding-left: 60px;
   padding-right: 60px;
 }
@@ -758,9 +749,10 @@ fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: space-between;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
   padding-left: 73px;
   padding-right: 73px;
   text-align: center;
@@ -787,7 +779,7 @@ fieldset {
   display: flex;
 }
 
-.search-rezult {
+.search-result {
   margin: 0;
   margin-right: 45px;
 }
@@ -835,6 +827,7 @@ fieldset {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: auto;
 }
 
 .sort-button a path {
@@ -861,6 +854,10 @@ fieldset {
 
 .sort-button-ebbing {
   padding-left: 12px;
+}
+
+.sort-button a:nth-child(2) path {
+  fill: #81b3d2;
 }
 
 .sorting-item {
@@ -1013,10 +1010,6 @@ fieldset {
   padding: 3px 13px;
 }
 
-.rating {
-  text-align: right;
-}
-
 .rating-list {
   margin: 0;
   padding: 0;
@@ -1024,7 +1017,16 @@ fieldset {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  margin-left: auto;
+  -webkit-box-align: flex-end;
+  -moz-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: flex-end;
+  -moz-box-pack: flex-end;
+  -ms-flex-pack: flex-end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .rating-item {
@@ -1084,6 +1086,7 @@ fieldset {
 
 .price-control input {
   width: 50px;
+  min-height: 30px;
   margin: 0;
   padding: 0;
   padding-left: 3px;
@@ -1091,6 +1094,7 @@ fieldset {
   font: inherit;
   background: none;
   border: none;
+  vertical-align: top;
 }
 
 .range-control {
@@ -1124,8 +1128,7 @@ fieldset {
 
 .range-toggle:hover {
   background: #1c4f80;
-  border: 9px solid #ffffff;
-  border-radius: 50%;
+  transform: scale(1.1);
   background: #ababab;
 }
 

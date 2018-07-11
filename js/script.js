@@ -8,10 +8,13 @@ var form = popup.querySelector("form");
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.toggle("search-form-show");
+  popup.classList.remove("search-form-error");
   });
 popup.addEventListener("submit", function (evt) {
   if (!start.value || !finish.value || !adults.value || !children.value) {
     evt.preventDefault();
+    popup.classList.remove("search-form-error");
+    popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("search-form-error");
   }
 });
@@ -20,6 +23,7 @@ window.addEventListener("keydown", function (evt) {
       evt.preventDefault();
          if (popup.classList.contains("search-form-show")) {
            popup.classList.remove("search-form-show");
+           popup.classList.remove("search-form-error");
          }
        }
      });
