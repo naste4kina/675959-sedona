@@ -174,7 +174,7 @@ a {
   list-style: none;
   font-size: 12px;
   line-height: 18px;
-  color: #cacaca;
+  color: rgba(0,0,0,0.3);
   border-bottom: 1px dotted #81b3d2;
 }
 
@@ -1439,7 +1439,7 @@ fieldset {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   position: relative;
   text-align: left;
 }
