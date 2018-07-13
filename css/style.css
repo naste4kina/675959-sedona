@@ -57,7 +57,7 @@ a {
 .feature-item h3 {
   font-size: 21px;
   line-height: 21px;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
 }
 
 .button {
@@ -355,8 +355,8 @@ a {
 .column-text1 {
   width: 33.3%;
   color: #ffffff;
-  padding-bottom: 38px;
-  padding-top: 48px;
+  padding-bottom: 36px;
+  padding-top: 50px;
 }
 
 .column-text1 h3 {
@@ -370,7 +370,7 @@ a {
 .column-text1 p {
   padding-left: 50px;
   padding-right: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .column-img1 {
@@ -393,8 +393,8 @@ a {
           justify-content: space-between;
   position: relative;
   z-index: 1;
-  padding-top: 163px;
-  padding-bottom: 81px;
+  padding-top: 165px;
+  padding-bottom: 83px;
 }
 
 .recommendations-list>li:nth-child(1)::before {
@@ -458,8 +458,8 @@ a {
 .column-text2 {
   width: 33.3%;
   color: #ffffff;
-  padding-bottom: 38px;
-  padding-top: 46px;
+  padding-bottom: 40px;
+  padding-top: 48px;
   margin-left: auto;
 }
 
@@ -493,7 +493,7 @@ a {
   display: flex;
   background-color: #eeeeee;
   padding-bottom: 39px;
-  padding-top: 46px;
+  padding-top: 50px;
 }
 
 .last-feature-item {
@@ -510,7 +510,7 @@ a {
 .last-feature-item p {
   padding-left: 75px;
   padding-right: 75px;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   color: #333333;
 }
 
