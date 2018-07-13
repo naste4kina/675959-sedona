@@ -370,7 +370,7 @@ a {
 .column-text1 p {
   padding-left: 50px;
   padding-right: 50px;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 
 .column-img1 {
@@ -394,7 +394,7 @@ a {
   position: relative;
   z-index: 1;
   padding-top: 163px;
-  padding-bottom: 80px;
+  padding-bottom: 82px;
 }
 
 .recommendations-list>li:nth-child(1)::before {
@@ -474,7 +474,7 @@ a {
 .column-text2 p {
   padding-left: 38px;
   padding-right: 40px;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 }
 
 .column-img2 {
@@ -492,8 +492,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   background-color: #eeeeee;
-  padding-bottom: 36px;
-  padding-top: 49px;
+  padding-bottom: 39px;
+  padding-top: 51px;
 }
 
 .last-feature-item {
@@ -510,7 +510,7 @@ a {
 .last-feature-item p {
   padding-left: 75px;
   padding-right: 75px;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
   color: #333333;
 }
 
