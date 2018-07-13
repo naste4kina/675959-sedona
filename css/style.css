@@ -356,7 +356,7 @@ a {
   width: 33.3%;
   color: #ffffff;
   padding-bottom: 36px;
-  padding-top: 50px;
+  padding-top: 48px;
 }
 
 .column-text1 h3 {
@@ -393,7 +393,7 @@ a {
           justify-content: space-between;
   position: relative;
   z-index: 1;
-  padding-top: 163px;
+  padding-top: 162px;
   padding-bottom: 80px;
 }
 
@@ -415,7 +415,7 @@ a {
   position: absolute;
   width: 74px;
   height: 70px;
-  top: 63px;
+  top: 60px;
   left: 50%;
   margin-left: -38px;
   background-image: url(../img/icon-food.svg);
