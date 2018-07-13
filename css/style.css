@@ -403,9 +403,9 @@ a {
   position: absolute;
   width: 75px;
   height: 72px;
-  top: 60px;
+  top: 62px;
   left: 50%;
-  margin-left: -439px;
+  margin-left: -437px;
   background-image: url(../img/icon-hotels.svg);
   background-repeat: no-repeat;
   z-index: 2;
@@ -416,7 +416,7 @@ a {
   position: absolute;
   width: 74px;
   height: 70px;
-  top: 60px;
+  top: 63px;
   left: 50%;
   margin-left: -37px;
   background-image: url(../img/icon-food.svg);
@@ -429,9 +429,9 @@ a {
   position: absolute;
   width: 64px;
   height: 76px;
-  top: 56px;
+  top: 57px;
   left: 50%;
-  margin-left: 367px;
+  margin-left: 368px;
   background-image: url(../img/icon-suvenirs.svg);
   background-repeat: no-repeat;
   z-index: 2;
