@@ -1,3 +1,5 @@
+/* не могу понять что не так с Pixel perfect - у меня все сходилось до этого, но после пуша расползается
+сейчас у меня выглядит так, перед сдачей - https://yadi.sk/d/Es7quIns3Z9Ngw , но как быть уверенным, что так и сохранится? */
 
 body {
   font-family: "PT Sans", Arial, sans-serif;
@@ -167,7 +169,6 @@ a {
 
 .sorting-list {
   list-style: none;
-
 }
 
 .sorting-list a {
@@ -836,7 +837,7 @@ fieldset {
 }
 
 .sort-button-increase:hover path,
-.sort-button-increase:focus path{
+.sort-button-increase:focus path {
   fill: #000000;
 }
 
@@ -922,11 +923,12 @@ fieldset {
 .hotel-page:focus {
   color: #81b3d2;
 }
+
 .hotel-page:active {
   color: #b2b2b2;
 }
 
-.catalog-item-type{
+.catalog-item-type {
   padding: 0;
   margin: 0;
   margin-bottom: 16px;
@@ -966,7 +968,6 @@ fieldset {
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
-
 }
 
 .col2 {
@@ -1209,7 +1210,6 @@ fieldset {
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  /* cursor: pointer; */
 }
 
 .filter-option input:checked+label::before {
@@ -1221,7 +1221,6 @@ fieldset {
   background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  /* cursor: pointer; */
 }
 
 .filter-option::before:disabled {
@@ -1487,7 +1486,7 @@ fieldset {
   color: #000000;
 }
 
-.item-children label{
+.item-children label {
   width: 80px;
   padding-left: 28px;
 }
@@ -1538,7 +1537,7 @@ fieldset {
 .minus:hover,
 .minus:focus,
 .plus:hover,
-.plus:focus{
+.plus:focus {
   color: #000000;
 }
 
